@@ -1,6 +1,7 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
+const connect = require('./connect')
 
 function createWindow () {
   // Create the browser window.
@@ -14,9 +15,9 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
-
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
+  connect();
 }
 
 // This method will be called when Electron has finished

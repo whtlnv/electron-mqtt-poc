@@ -18,5 +18,8 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^13.1.9"
+  },
+  "dependencies": {
+    "mqtt": "^4.2.8"
   }
 }
